@@ -1,9 +1,12 @@
 <template>
   <div class="container mt-2">
     <div class="container mt-2">
-      <b-form-group label="Preencha os campos abaixo" label-for="subject">
+      <b-form-group
+        label="Todo movimento conta para sua saúde e a prática de atividades físicas regulares pode ser uma grande aliada no controle da pressão arterial. Registre aqui suas atividades realizadas e procure acumular 150 minutos/semana de atividades física moderada a vigorosa."
+        label-for="subject"
+      >
         <b-form-group
-          label="Todo movimento conta para sua saúde e a prática de atividades físicas regulares pode ser uma grande aliada no controle da pressão arterial. Registre aqui suas atividades realizadas e procure acumular 150 minutos/semana de atividades física moderada a vigorosa."
+          label="Preencha os campos abaixo"
           label-for="subject"
         ></b-form-group>
         <b-form-datepicker placeholder="Data: Obrigatória" class="mb-6">
