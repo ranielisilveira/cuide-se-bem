@@ -1,15 +1,15 @@
 <template>
   <div class="container mt-2">
     <b-card title="Meu Resumo">
-      <b-list-group-item class="d-flex align-items-center">
-        <b-avatar class="mr-3"></b-avatar>
-        <span class="mr-auto">(variável nome)</span>
-        <p><b-badge>(variável idade)</b-badge></p>
-        <p>
-          <b-card-text>(variável doença crônica) doenças crônicas</b-card-text>
-        </p>
-        <b-button variant="outline-info" class="mr-2">Editar dados</b-button>
-      </b-list-group-item>
+      <b-card bg-variant="dark" text-variant="white" title="Meu Resumo">
+        <b-avatar class="align-baseline"></b-avatar>
+        (variável nome)
+        <p>(variável idade)</p>
+        <b-card-text>(variável doença crônica) doenças crônicas</b-card-text>
+        <b-button href="#" variant="outline-info" class="mr-2"
+          >Editar dados</b-button
+        >
+      </b-card>
     </b-card>
     <b-card title="Pressão arterial">
       <b-card-text>Última medição (variável data da medição)</b-card-text>
@@ -30,15 +30,25 @@
       (variável de objetivo) semanais.
     </h5>
     <b-card title="Dica do dia">
-      <div class="card">
-        <div class="card-header">Corridinha de 15 minutos</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            Você sabia? Correr 15 minutos por dia diminui os níveis de estresse.
-          </h5>
+      <div class="container mt-2">
+        <b-card
+          img-src="https://placekitten.com/300/300"
+          img-alt="Card image"
+          img-left
+          class="mb-3"
+        >
+          <b-card-text>
+            <div class="card-header">Corridinha de 15 minutos</div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Você sabia? Correr 15 minutos por dia diminui os níveis de
+                estresse.
+              </h5>
 
-          <a href="#" class="btn btn-primary">Vamos lá?</a>
-        </div>
+              <a href="#" class="btn btn-primary">Vamos lá?</a>
+            </div>
+          </b-card-text>
+        </b-card>
       </div>
     </b-card>
   </div>
