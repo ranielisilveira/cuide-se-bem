@@ -2,7 +2,7 @@
   <div class="container mt-2">
     <b-card title="Meu Resumo">
       <b-card bg-variant="dark" text-variant="white" title="Meu Resumo">
-        <b-avatar class="align-baseline"></b-avatar>
+        <b-avatar class="align-baseline" size="6rem"></b-avatar>
         (variável nome)
         <p>(variável idade)</p>
         <b-card-text>(variável doença crônica) doenças crônicas</b-card-text>

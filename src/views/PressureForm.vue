@@ -35,14 +35,44 @@
       <b-form-select class="mb-6" v-model="selected" :options="heartRate">
       </b-form-select>
     </div>
+    <div class="container mt-2">
+      <h5>
+        Você fez a medição da pressão com a bexiga esvaziada e há, pelo menos,
+        30 minutos sem fumar, sem ingerir bebidas alcólicas e/ou cafeinadas e
+        sem ter praticado exercícios físicos?
+      </h5>
+    </div>
+
+    <div class="container mt-2">
+      <b-form-radio v-model="yesOrNo" item="yes" value="Sim">Sim</b-form-radio>
+      <b-form-radio v-model="yesOrNo" item="no" value="Não">Não</b-form-radio>
+    </div>
+    <div class="container mt-2">
+      <b-button @click="showMsgOk" variant="primary">Enviar</b-button>
+      <!-- <modal-pressure-normal></modal-pressure-normal> -->
+      <!-- <modal-pressure-altered></modal-pressure-altered> -->
+    </div>
   </div>
 </template>
 
 <script>
+import ModalPressureNormal from "./ModalPressureNormal.vue";
+import ModalPressureAltered from "./ModalPressureAltered.vue";
+
 export default {
+  components: {
+    ModalPressureNormal,
+    ModalPressureAltered,
+  },
+
   data() {
     return {
       selected: null,
+      optionsPAS: null,
+      optionsPAD: null,
+      heartRate: null,
+      yesOrNo: null,
+      boxOne: "",
       optionsPAS: [
         { text: "PAS (Pressão Arterial Sistólica): Obrigatório", value: null },
         { text: "Menor que 85 mmHg", value: "85mmHg" },
