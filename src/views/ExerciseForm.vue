@@ -22,48 +22,20 @@
     </div>
 
     <div class="container mt-2">
-      <b-form-input
-        list="input-list"
-        placeholder="Exercício: Obrigatória"
-        class="mb-6"
-        :options="optionsExercise"
-      ></b-form-input>
-      <b-form-datalist
-        placeholder="Exercício: Obrigatória"
-        class="mb-6"
-        id="input-list"
-        :options="optionsExercise"
-      ></b-form-datalist>
+      <b-form-select class="mb-6" v-model="selected" :options="optionsExercise">
+      </b-form-select>
     </div>
-
     <div class="container mt-2">
-      <b-form-input
-        list="input-list"
-        placeholder="Duração: Obrigatória"
+      <b-form-select
         class="mb-6"
-        id="input-list"
+        v-model="selected"
         :options="optionsDurationExercise"
-      ></b-form-input>
-      <b-form-datalist></b-form-datalist>
+      >
+      </b-form-select>
     </div>
-
-    <!-- <div class="container mt-2">
-      <b-form-input list="input-list"></b-form-input>
-      <b-form-datalist
-        id="input-list"
-        :options="type"
-      ></b-form-datalist>
-    </div> -->
-
     <div class="container mt-2">
-      <b-form-input
-        list="input-list"
-        id="input-list"
-        placeholder="Intensidade"
-        class="mb-6"
-        :options="intensity"
-      ></b-form-input>
-      <b-form-datalist></b-form-datalist>
+      <b-form-select class="mb-6" v-model="selected" :options="intensity">
+      </b-form-select>
     </div>
 
     <div class="container mt-2">
@@ -76,8 +48,34 @@
 export default {
   data() {
     return {
-      optionsExercise: ["Bicicleta", "Caminhada", "Corrida", "Musculação"],
-      optionsDurationExercise: ["30min", "1h", "1h:30min", "2h"],
+      selected: null,
+      optionsExercise: [
+        { text: "Exercício: Obrigatório", value: null },
+        { text: "Academia", value: "Academia" },
+        { text: "Corrida", value: "Corrida" },
+        { text: "Caminhada", value: "Caminhada" },
+        { text: "Dança", value: "Dança" },
+        { text: "Natação", value: "Natação" },
+        { text: "Piscina", value: "Piscina" },
+        { text: "Pulo", value: "Pulo" },
+        { text: "Remo", value: "Remo" },
+        { text: "Spinning", value: "Spinning" },
+        { text: "Stepping", value: "Stepping" },
+        { text: "Yoga", value: "Yoga" },
+      ],
+      optionsDurationExercise: [
+        { text: "Duração: Obrigatória", value: null },
+        { text: "30min", value: "30min" },
+        { text: "1 hora", value: "1 hora" },
+        { text: "1h:30min", value: "1h:30min" },
+        { text: "2 horas", value: "2 horas" },
+      ],
+      intensity: [
+        { text: "Intensidade", value: null },
+        { text: "Fácil", value: "easy" },
+        { text: "Médio", value: "medium" },
+        { text: "Difícil", value: "hard" },
+      ],
     };
   },
 };
