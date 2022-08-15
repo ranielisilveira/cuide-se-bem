@@ -25,6 +25,7 @@
       <b-form-select class="mb-6" v-model="selected" :options="optionsExercise">
       </b-form-select>
     </div>
+
     <div class="container mt-2">
       <b-form-select
         class="mb-6"
@@ -33,6 +34,7 @@
       >
       </b-form-select>
     </div>
+
     <div class="container mt-2">
       <b-form-select class="mb-6" v-model="selected" :options="intensity">
       </b-form-select>

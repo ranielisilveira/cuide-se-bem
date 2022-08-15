@@ -22,52 +22,18 @@
     </div>
 
     <div class="container mt-2">
-      <b-form-input
-        list="input-list"
-        placeholder="Exercício: Obrigatória"
-        class="mb-6"
-        :options="optionsExercise"
-      ></b-form-input>
-      <b-form-datalist
-        placeholder="Exercício: Obrigatória"
-        class="mb-6"
-        id="input-list"
-        :options="optionsExercise"
-      ></b-form-datalist>
+      <b-form-select class="mb-6" v-model="selected" :options="optionsPAS">
+      </b-form-select>
     </div>
 
     <div class="container mt-2">
-      <b-form-input
-        list="input-list"
-        placeholder="Duração: Obrigatória"
-        class="mb-6"
-        id="input-list"
-        :options="optionsDurationExercise"
-      ></b-form-input>
-      <b-form-datalist></b-form-datalist>
-    </div>
-
-    <!-- <div class="container mt-2">
-      <b-form-input list="input-list"></b-form-input>
-      <b-form-datalist
-        id="input-list"
-        :options="type"
-      ></b-form-datalist>
-    </div> -->
-
-    <div class="container mt-2">
-      <b-form-input
-        list="input-list"
-        id="input-list"
-        placeholder="Intensidade"
-        class="mb-6"
-        :options="intensity"
-      ></b-form-input>
-      <b-form-datalist></b-form-datalist>
+      <b-form-select class="mb-6" v-model="selected" :options="optionsPAD">
+      </b-form-select>
     </div>
 
     <div class="container mt-2">
-      <b-button variant="primary" class="mb-6">Enviar</b-button>
+      <b-form-select class="mb-6" v-model="selected" :options="heartRate">
+      </b-form-select>
     </div>
   </div>
 </template>
@@ -76,8 +42,32 @@
 export default {
   data() {
     return {
-      optionsExercise: ["Bicicleta", "Caminhada", "Corrida", "Musculação"],
-      optionsDurationExercise: ["30min", "1h", "1h:30min", "2h"],
+      selected: null,
+      optionsPAS: [
+        { text: "PAS (Pressão Arterial Sistólica): Obrigatório", value: null },
+        { text: "Menor que 85 mmHg", value: "85mmHg" },
+        { text: "Entre 85 e 89 mmHg", value: "85 e 89 mmHg" },
+        { text: "Entre 90 e 99 mmHg", value: "Dan90 e 99 mmHgça" },
+        { text: "Entre 100 e 109 mmHg", value: "100 e 109 mmHg" },
+        { text: "Maior ou igual a 110 mmHg", value: "110 mmHg" },
+        { text: "Menor que 90 mmHg", value: "90 mmHg" },
+      ],
+      optionsPAD: [
+        { text: "PAD (Pressão Arterial Diastólica): Obrigatório", value: null },
+        { text: "Menor que 130 mmHg", value: "130mmHg" },
+        { text: "Entre 130 e 139 mmHg", value: "130 e 139 mmHg" },
+        { text: "Entre 140 e 159 mmHg", value: "140 e 159 mmHg" },
+        { text: "Entre 160 e 179 mmHg", value: "160 e 179 mmHg" },
+        { text: "Maior ou igual a 180 mmHg", value: "180 mmHg" },
+        { text: "Menor que 140 mmHg", value: "140 mmHg" },
+      ],
+      heartRate: [
+        { text: "Frequência cardíaca", value: null },
+        { text: "120 a 140 bpm", value: "120 a 140 bpm" },
+        { text: "80 a 100 bpm", value: "80 a 100 bpm" },
+        { text: "70 a 80 bpm", value: "70 a 80 bpm" },
+        { text: "50 a 60 bpm", value: "50 a 60 bpm" },
+      ],
     };
   },
 };
