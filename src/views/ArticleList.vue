@@ -34,7 +34,7 @@
         <div class="card-header">Alongamento é tudo</div>
         <div class="card-body">
           <h5 class="card-title">
-            A importÂncia do alongamento na atividade física é indispensável.
+            A importância do alongamento na atividade física é indispensável.
           </h5>
 
           <a href="#" class="btn btn-primary">Vamos lá?</a>
@@ -70,8 +70,6 @@
           <a href="#" class="btn btn-primary">Vamos lá?</a>
         </div>
       </div>
-
-      <h1>ArticleList</h1>
     </div>
   </div>
 </template>
