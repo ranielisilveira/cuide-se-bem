@@ -20,55 +20,102 @@
         <b-form-datalist></b-form-datalist>
       </div>
 
-      <div class="card">
-        <div class="card-header">Corridinha de 15 minutos</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            Você sabia? Correr 15 minutos por dia diminui os níveis de estresse.
-          </h5>
+      <div class="container mt-2">
+        <b-card
+          img-src="https://placekitten.com/300/300"
+          img-alt="Card image"
+          img-left
+          class="mb-3"
+        >
+          <b-card-text>
+            <div class="card-header">Corridinha de 15 minutos</div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Você sabia? Correr 15 minutos por dia diminui os níveis de
+                estresse.
+              </h5>
 
-          <a href="#" class="btn btn-primary">Vamos lá?</a>
-        </div>
+              <a href="#" class="btn btn-primary">Vamos lá?</a>
+            </div>
+          </b-card-text>
+        </b-card>
       </div>
-      <div class="card">
-        <div class="card-header">Alongamento é tudo</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            A importância do alongamento na atividade física é indispensável.
-          </h5>
+      <div class="container mt-2">
+        <b-card
+          img-src="https://placekitten.com/300/300"
+          img-alt="Card image"
+          img-left
+          class="mb-3"
+        >
+          <b-card-text>
+            <div class="card-header">Alongamento é tudo</div>
+            <div class="card-body">
+              <h5 class="card-title">
+                A importância do alongamento na atividade física é
+                indispensável.
+              </h5>
 
-          <a href="#" class="btn btn-primary">Vamos lá?</a>
-        </div>
+              <a href="#" class="btn btn-primary">Vamos lá?</a>
+            </div>
+          </b-card-text>
+        </b-card>
       </div>
-      <div class="card">
-        <div class="card-header">Aeróbicos vão te ajudar</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            Manter sua rotina de aeróbicos ajudam a regular sua pressão.
-          </h5>
+      <div class="container mt-2">
+        <b-card
+          img-src="https://placekitten.com/300/300"
+          img-alt="Card image"
+          img-left
+          class="mb-3"
+        >
+          <b-card-text>
+            <div class="card-header">Aeróbicos vão te ajudar</div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Manter sua rotina de aeróbicos ajudam a regular sua pressão.
+              </h5>
 
-          <a href="#" class="btn btn-primary">Vamos lá?</a>
-        </div>
+              <a href="#" class="btn btn-primary">Vamos lá?</a>
+            </div>
+          </b-card-text>
+        </b-card>
       </div>
-      <div class="card">
-        <div class="card-header">Musculação é revigorante</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            Não apenas para seu músculo mas também para sua energia.
-          </h5>
+      <div class="container mt-2">
+        <b-card
+          img-src="https://placekitten.com/300/300"
+          img-alt="Card image"
+          img-left
+          class="mb-3"
+        >
+          <b-card-text>
+            <div class="card-header">Musculação é revigorante</div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Não apenas para seu músculo mas também para sua energia.
+              </h5>
 
-          <a href="#" class="btn btn-primary">Vamos lá?</a>
-        </div>
+              <a href="#" class="btn btn-primary">Vamos lá?</a>
+            </div>
+          </b-card-text>
+        </b-card>
       </div>
-      <div class="card">
-        <div class="card-header">Os melhores tênis para corrida</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            O equilíbrio de um bom tênis é muito importante na corrida.
-          </h5>
+      <div class="container mt-2">
+        <b-card
+          img-src="https://placekitten.com/300/300"
+          img-alt="Card image"
+          img-left
+          class="mb-3"
+        >
+          <b-card-text>
+            <div class="card-header">Os melhores tênis para corrida</div>
+            <div class="card-body">
+              <h5 class="card-title">
+                O equilíbrio de um bom tênis é muito importante na corrida.
+              </h5>
 
-          <a href="#" class="btn btn-primary">Vamos lá?</a>
-        </div>
+              <a href="#" class="btn btn-primary">Vamos lá?</a>
+            </div>
+          </b-card-text>
+        </b-card>
       </div>
     </div>
   </div>
