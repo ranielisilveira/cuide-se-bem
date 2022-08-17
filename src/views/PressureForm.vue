@@ -48,16 +48,16 @@
       <b-form-radio v-model="yesOrNo" item="no" value="Não">Não</b-form-radio>
     </div>
     <div class="container mt-2">
-      <b-button @click="showMsgOk" variant="primary">Enviar</b-button>
-      <!-- <modal-pressure-normal></modal-pressure-normal> -->
+      <b-button @click="showExternalModal" variant="primary">Enviar</b-button>
+      <modal-pressure-normal ref="PressureNormal"></modal-pressure-normal>
       <!-- <modal-pressure-altered></modal-pressure-altered> -->
     </div>
   </div>
 </template>
 
 <script>
-import ModalPressureNormal from "./ModalPressureNormal.vue";
-import ModalPressureAltered from "./ModalPressureAltered.vue";
+import ModalPressureNormal from "@/components/ModalPressureNormal.vue";
+import ModalPressureAltered from "@/components/ModalPressureAltered.vue";
 
 export default {
   components: {
@@ -67,6 +67,7 @@ export default {
 
   data() {
     return {
+      visible: false,
       selected: null,
       optionsPAS: null,
       optionsPAD: null,
@@ -99,6 +100,12 @@ export default {
         { text: "50 a 60 bpm", value: "50 a 60 bpm" },
       ],
     };
+  },
+
+  methods: {
+    showExternalModal() {
+      this.$refs.PressureNormal.showMsgOk();
+    },
   },
 };
 </script>

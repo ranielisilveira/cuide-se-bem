@@ -1,8 +1,4 @@
-<template>
-  <div class="container mt-2">
-    <b-button @click="showMsgOk" variant="primary">Enviar</b-button>
-  </div>
-</template>
+<template></template>
 
 <script>
 export default {
